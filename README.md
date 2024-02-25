@@ -6,6 +6,7 @@
 
 The Train Ticket Scheduling Backend Service is an integral part of a sophisticated train ticketing system. It efficiently manages backend operations related to ticket scheduling and management, employing technologies like Xcode, Vapor, Fluent, Postman, and PostgreSQL. This service ensures seamless communication between frontend interfaces and underlying data storage systems, providing a smooth user experience for passengers and operators.
 
+### App Statment: Train Ticket Scheduling Backend Service.
 
 ## Key Features
 
@@ -98,8 +99,7 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 ## Project Milestones:
 
 1. **Comprehend the system and construct an Entity-Relationship (ER) diagram:**
-   
-![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
+ ![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
 
 2. **Creating Database using Postgres:**
    - Execute the following command: `CREATE DATABASE sauditrain;`
@@ -107,20 +107,19 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 
 3. **Creating Project in Xcode using Vapor:**
    - Generate the project with: `vapor new SaudiTrain`
-   - Linking to the Database through the <span style="background-color: #FFFF00">configure</span> page:
+   - Linking to the Database through the **configure** page:
      ![Database Linking](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/dd2e8582-f114-41ab-b41b-109b3fe4fa0c)
-   - Build required tables as <span style="background-color: #FFFF00">Models</span>. In our case, we have three tables.
+   - Build required tables as **Models**. In our case, we have three tables.
    
 4. **Implementing Item Addition in Tables:**
-   - Utilize <span style="background-color: #FFFF00">Migrations</span> to create <span style="background-color: #FFFF00">prepare</span> and <span style="background-color: #FFFF00">revert</span> for each table.
+   -Create `prepare` and `revert` or each table.
 
 5. **Implementing Item Addition via Postman:**
-   - Use <span style="background-color: #FFFF00">Postman</span> as a networking tool to add items. 
+   - Use **Postman** as a networking tool to add items. 
    - Generate controllers to enable functionality, creating root and APIs for each.
-   ![Postman Activation](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/fc2d700e-94c4-4b36-84c4-15519e6263ff)
-
+ 
 6. **Visualizing Database with Added Items:**
-   - Utilize <span style="background-color: #FFFF00">Postico</span> to visualize the database with the added items.
+   - Utilize **Postico** to visualize the database with the added items. <img width="939" alt="image" src="https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/ae34bb2b-82e2-46f6-984b-e1b695b434c6">
 
 
 ### Credits
