@@ -112,7 +112,7 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
    - Build required tables as **Models**. In our case, we have three tables.
    
 4. **Implementing Item Addition in Tables:**
-   -Create `prepare` and `revert` or each table.
+   - Create `prepare` and `revert` or each table.
 
 5. **Implementing Item Addition via Postman:**
    - Use **Postman** as a networking tool to add items. 
