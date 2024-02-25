@@ -1,27 +1,47 @@
-# Train Ticket Scheduling Backend Service
+## Train Ticket Scheduling Backend Service
 
 ![Metro](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/eeda35d0-b7a9-48be-abc4-e23d080a0830)
 
-## Overview
+### Overview
 
-The Train Ticket Scheduling Backend Service is a vital component of a train ticketing system, responsible for managing the backend operations related to ticket scheduling and management. Built using modern technologies such as Xcode, Vapor, Fluent, Postman, and PostgreSQL, it offers robust functionality for handling passengers, tickets, and train schedules.
+The Train Ticket Scheduling Backend Service is an essential element of a train ticketing system, responsible for managing backend operations related to ticket scheduling and management. Utilizing modern technologies such as Xcode, Vapor, Fluent, Postman, and PostgreSQL, it provides robust functionality for handling passengers, tickets, and train schedules.
 
-Overall, the Train Ticket Scheduling Backend Service plays a critical role in ensuring the smooth operation of the train ticketing system, enabling seamless communication between the frontend interfaces and underlying data storage systems while delivering a seamless and efficient user experience for passengers and operators alike.
+The Train Ticket Scheduling Backend Service plays a critical role in ensuring the smooth operation of the train ticketing system. It facilitates seamless communication between frontend interfaces and underlying data storage systems, delivering an efficient user experience for both passengers and operators.
 
-## Features
+### Features
 
 Key features of the Train Ticket Scheduling Backend Service include:
 
-1. **Passenger Management:** CRUD operations for managing passenger information.
-2. **Ticket Management:** Creation, retrieval, and deletion of ticket records.
-3. **Train Schedule Management:** Handling train schedules, including CRUD operations for defining timing, routes, and availability.
+1. **Passenger Management:**
+   - Fetch all Passengers
+   - Delete Passenger by Name
+   - Create Passengers by Name
+   - Read Passengers by Name
+   - Update Passengers by Name
+   - Fetch Passengers by ID
 
-## Tools 🛠️
+2. **Ticket Management:**
+   - Fetch all Tickets
+   - Fetch Ticket by Ticket Number
+   - Delete Ticket by Ticket Number
+   - Read Ticket by Ticket Number
+   - Delete Seat Number
+   - Read Seat Number
 
-Thank you for downloading the following tools:
+3. **Train Schedule Management:**
+   - Create Train Schedule by ID
+   - Read Train Schedule by ID
+   - Delete Train Schedule by ID
+   - Update Train Schedule by ID
+   - Fetch all Train Schedules
+   - Fetch Train Schedule by ID
+
+### Tools
+
+Thank you for utilizing the following tools:
 
 1. **Vapor**:
-   - Description: Vapor is a server-side Swift web framework that enables developers to create high-performance web applications and APIs.
+   - Description: Vapor is a server-side Swift web framework enabling developers to create high-performance web applications and APIs.
    - Website: [Vapor](https://vapor.codes/)
 
 2. **Postman**:
@@ -36,30 +56,30 @@ Thank you for downloading the following tools:
    - Description: Postgres is an open-source relational database management system known for its advanced features and scalability, ideal for handling complex data storage and retrieval requirements.
    - Website: [PostgreSQL](https://www.postgresql.org/)
 
-# Usage
+### Usage
 
-The project provides the following tables and their endpoints:
+![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
 
+The project offers the following tables and their respective endpoints:
 
-### Passengers Table
+#### Passengers Table
 
 | Column Name   | Type    | 
 | ------------- | ------- |
 | PassengerName | String  |
 | id            | UUID    |
 
--  Where id is the PRIMARY KEY
+- Where id is the PRIMARY KEY
   
 | Request Method	 | Route | Action |
 |----------|----------|----------|
-| Get | /passengers| Returns a list of all passenger data |
-| Get | /passengers/:id | Returns a list of all passenger data by ID |
+| GET | /passengers| Returns a list of all passenger data |
+| GET | /passengers/:id | Returns passenger data by ID |
 | POST | /passengers| Creates a new passenger |
-| DELET | /passengers/:id| Deletes an existing passenger data by ID. |
-| PUT | /passengers/:id| Update passenger data by ID. |
+| DELETE | /passengers/:id| Deletes passenger data by ID |
+| PUT | /passengers/:id| Updates passenger data by ID |
 
-
-### Ticket Table
+#### Ticket Table
 
 | Column Name   | Type    | 
 | ------------- | ------- |
@@ -69,41 +89,37 @@ The project provides the following tables and their endpoints:
 | PassengerName | String  |
 | SeatNumber    | String  |
 
-- Where id is the PRIMARY KEY and the PassengerID is FOREIGN KEY
+- Where id is the PRIMARY KEY and PassengerID is FOREIGN KEY
   
- | Request Method	 | Route | Action |
+| Request Method	 | Route | Action |
 |----------|----------|----------|
 | POST | /ticket| Creates a new ticket |
-| Get | /ticket| Returns a list of all ticket data |
-| Get | /ticket/:id | Returns a list of all ticket data by ID |
-| DELET | /ticket/:id| Deletes an existing ticket data by ID. |
-| PUT | /ticket/:id| Update ticket data by ID. |
+| GET | /ticket| Returns a list of all ticket data |
+| GET | /ticket/:id | Returns ticket data by ID |
+| DELETE | /ticket/:id| Deletes ticket data by ID |
+| PUT | /ticket/:id| Updates ticket data by ID |
 
-### Train SchedulesTable
+#### Train Schedules Table
 
 | Column Name   | Type    | 
 | ------------- | ------- |
 | id            | UUID    |
-| ScheduleID  | int  |
-| TrainNumber   | string    |
-| ArrivalStation | string  |
-| ArrivalDate    | datetime  |
+| ScheduleID    | int     |
+| TrainNumber   | string  |
+| ArrivalStation| string  |
+| ArrivalDate   | datetime|
+
 - Where ScheduleID is the PRIMARY KEY
   
 | Request Method	 | Route | Action |
 |----------|----------|----------|
-| Get | /train_schedule| Returns a list of all train Schedule data |
-| Get | /train_schedule/:id | Returns a list of all train Schedule data by ID |
-| DELET | /train_schedule/:id| Deletes an existing train Schedule data by ID. |
-| PUT | /train_schedule/:id| Update train Schedule data by ID. |
+| GET | /train_schedule| Returns a list of all train Schedule data |
+| GET | /train_schedule/:id | Returns train Schedule data by ID |
+| DELETE | /train_schedule/:id| Deletes train Schedule data by ID |
+| PUT | /train_schedule/:id| Updates train Schedule data by ID |
 
-All endpoints support JSON encoding and decoding of each Itinerary and Pilgrim items. To create, delete, or update on itinerary’s type, send a JSON payload in the request body.
-Example :
-## Credits
-The project was created by:
-- Rozana Alzhrani
-- AlJawharh AlOtaibi
-  
- @2024
- 
+All endpoints support JSON encoding and decoding of each itinerary and pilgrim items. To create, delete, or update on the itinerary’s type, send a JSON payload in the request body.
 
+### Credits
+
+The project was created by rozana@gmail.com.
