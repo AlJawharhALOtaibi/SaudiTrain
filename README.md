@@ -1,66 +1,46 @@
-# Train Ticket Scheduling Backend Service Powered by Vapor, Postman, Postico, and PostgreSQL
+# Train Ticket Scheduling Backend Service Powered by Vapor, Fluent, Postman, Postico, and PostgreSQL
 
 ![Metro](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/eeda35d0-b7a9-48be-abc4-e23d080a0830)
 
 ### Overview
 
-The Train Ticket Scheduling Backend Service is an essential element of a train ticketing system, responsible for managing backend operations related to ticket scheduling and management. Utilizing modern technologies such as Xcode, Vapor, Fluent, Postman, and PostgreSQL, it provides robust functionality for handling passengers, tickets, and train schedules.
+The Train Ticket Scheduling Backend Service is an integral part of a sophisticated train ticketing system. It efficiently manages backend operations related to ticket scheduling and management, employing technologies like Xcode, Vapor, Fluent, Postman, and PostgreSQL. This service ensures seamless communication between frontend interfaces and underlying data storage systems, providing a smooth user experience for passengers and operators.
 
-The Train Ticket Scheduling Backend Service plays a critical role in ensuring the smooth operation of the train ticketing system. It facilitates seamless communication between frontend interfaces and underlying data storage systems, delivering an efficient user experience for both passengers and operators.
-
-## Features
-
-Key features of the Train Ticket Scheduling Backend Service include:
-
-1. **Passenger Management:**
-   - Fetch all Passengers
-   - Delete Passenger by ID
-   - Create Passengers 
-   - Read Passengers by ID
-   - Update Passengers by ID
-   - Fetch Passengers by ID
-
-2. **Ticket Management:**
-   - Fetch all Tickets
-   - Fetch Ticket by Ticket Number
-   - Delete Ticket by Ticket Number
-   - Read Ticket by Ticket Number
-
-3. **Train Schedule Management:**
-   - Create Train Schedule by ID
-   - Read Train Schedule by ID
-   - Delete Train Schedule by ID
-   - Update Train Schedule by ID
-   - Fetch all Train Schedules
-   - Fetch Train Schedule by ID
-
-## Tools
-
-Thank you for utilizing the following tools:
-
-1. **Vapor**:
-   - Description: Vapor is a server-side Swift web framework enabling developers to create high-performance web applications and APIs.
-   - Website: [Vapor](https://vapor.codes/)
-
-2. **Postman**:
-   - Description: Postman is a widely-used API development tool designed for testing, documenting, and managing APIs.
-   - Website: [Postman](https://www.postman.com/)
-
-3. **Postico**:
-   - Description: Postico is a user-friendly PostgreSQL client specifically built for macOS, providing a visual interface for managing and interacting with PostgreSQL databases.
-   - Website: [Postico](https://eggerapps.at/postico/)
-
-4. **Postgres**:
-   - Description: Postgres is an open-source relational database management system known for its advanced features and scalability, ideal for handling complex data storage and retrieval requirements.
-   - Website: [PostgreSQL](https://www.postgresql.org/)
-
-## Usage
+### ER Diagram
 
 ![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
 
-The project offers the following tables and their respective endpoints:
+## Key Features
 
-#### Passengers Table
+### Passenger Management:
+- Fetch all Passengers
+- Delete Passenger by ID
+- Create Passengers 
+- Read Passengers by ID
+- Update Passengers by ID
+- Fetch Passengers by ID
+
+### Ticket Management:
+- Fetch all Tickets
+- Fetch Ticket by Ticket Number
+- Delete Ticket by Ticket Number
+- Read Ticket by Ticket Number
+
+### Train Schedule Management:
+- Create Train Schedule by ID
+- Read Train Schedule by ID
+- Delete Train Schedule by ID
+- Update Train Schedule by ID
+- Fetch all Train Schedules
+- Fetch Train Schedule by ID
+
+
+
+## Functionality: Endpoint Catalog for Passenger, Ticket, and Train Schedules:
+
+The service offers various tables and endpoints for smooth functionality:
+
+### Passengers Table
 
 | Column Name   | Type    | 
 | ------------- | ------- |
@@ -77,7 +57,7 @@ The project offers the following tables and their respective endpoints:
 | DELETE | /passengers/:id| Deletes passenger data by ID |
 | PUT | /passengers/:id| Updates passenger data by ID |
 
-#### Ticket Table
+### Ticket Table
 
 | Column Name   | Type    | 
 | ------------- | ------- |
@@ -97,7 +77,7 @@ The project offers the following tables and their respective endpoints:
 | DELETE | /ticket/:id| Deletes ticket data by ID |
 | PUT | /ticket/:id| Updates ticket data by ID |
 
-#### Train Schedules Table
+### Train Schedules Table
 
 | Column Name   | Type    | 
 | ------------- | ------- |
@@ -117,19 +97,38 @@ The project offers the following tables and their respective endpoints:
 | PUT | /train_schedule/:id| Updates train Schedule data by ID |
 
 All endpoints support JSON encoding and decoding of each itinerary and pilgrim items. To create, delete, or update on the itinerary’s type, send a JSON payload in the request body.
-![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/2f2eccbd-a71f-4c9a-9133-1c25ec350d35)
 
-![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/31f83880-0980-451a-bbe1-4a89e6a0ac72)
 
-![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/2d6c1fad-9ce9-4ada-ab6e-29b5387ca7b7)
+## Project Milestones:
 
-![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/d6da644f-66af-4340-a660-a6fc0b361e0e)
+1. **Creating Database using Postgres:**
+   - Execute the following command: `CREATE DATABASE sauditrain;`
+   ![Database Creation](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2acfeb3f-a304-4fb0-87ed-e31813785b81)
 
-![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/8f84fc1f-7ee5-43c0-92f5-aa6d489496ee)
+2. **Creating Project in Xcode using Vapor:**
+   - Generate the project with: `vapor new SaudiTrain`
+   - Linking to the Database through the [<span style="background-color: #FFFF00">configure</span>] page:
+     ![Database Linking](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/dd2e8582-f114-41ab-b41b-109b3fe4fa0c)
+   - Build required tables as [<span style="background-color: #FFFF00">Models</span>]. In our case, we have three tables:
+     - Passengers:
+       ![Passengers Table](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/3c1dee7e-7669-4e4e-b6bb-eaeac9ffcfbc)
+     - Tickets:
+       ![Tickets Table](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/47ab1b59-cc8c-4603-b9bd-bc7a5fd9a032)
+     - Schedules:
+       ![Schedules Table](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/98940bc5-fbe6-460c-8a7c-7f2944e513ea)
+   - Call them in the configure page as shown in the image in 2.1.
 
-## Visual Interface
+3. **Implementing Item Addition in Tables:**
+   - Utilize [<span style="background-color: #FFFF00">Migrations</span>] to create [<span style="background-color: #FFFF00">prepare</span>] and [<span style="background-color: #FFFF00">revert</span>] for each table.
 
-![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/faf4dca3-ddec-4059-aa6a-869f9d68bb57)
+4. **Implementing Item Addition via Postman:**
+   - Use [<span style="background-color: #FFFF00">Postman</span>] as a networking tool to add items. 
+   - Generate controllers to enable functionality, creating root and APIs for each.
+   ![Postman Activation](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/fc2d700e-94c4-4b36-84c4-15519e6263ff)
+
+5. **Visualizing Database with Added Items:**
+   - Utilize [<span style="background-color: #FFFF00">Postico</span>] to visualize the database with the added items.
+
 
 ### Credits
 The project was created with the collaboration of @Rosie2378.
