@@ -6,9 +6,6 @@
 
 The Train Ticket Scheduling Backend Service is an integral part of a sophisticated train ticketing system. It efficiently manages backend operations related to ticket scheduling and management, employing technologies like Xcode, Vapor, Fluent, Postman, and PostgreSQL. This service ensures seamless communication between frontend interfaces and underlying data storage systems, providing a smooth user experience for passengers and operators.
 
-### ER Diagram
-
-![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
 
 ## Key Features
 
@@ -33,7 +30,6 @@ The Train Ticket Scheduling Backend Service is an integral part of a sophisticat
 - Update Train Schedule by ID
 - Fetch all Train Schedules
 - Fetch Train Schedule by ID
-
 
 
 ## Functionality: Endpoint Catalog for Passenger, Ticket, and Train Schedules:
@@ -101,33 +97,30 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 
 ## Project Milestones:
 
-1. **Creating Database using Postgres:**
+1. **Comprehend the system and construct an Entity-Relationship (ER) diagram:**
+   
+![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
+
+2. **Creating Database using Postgres:**
    - Execute the following command: `CREATE DATABASE sauditrain;`
    ![Database Creation](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2acfeb3f-a304-4fb0-87ed-e31813785b81)
 
-2. **Creating Project in Xcode using Vapor:**
+3. **Creating Project in Xcode using Vapor:**
    - Generate the project with: `vapor new SaudiTrain`
-   - Linking to the Database through the [<span style="background-color: #FFFF00">configure</span>] page:
+   - Linking to the Database through the <span style="background-color: #FFFF00">configure</span> page:
      ![Database Linking](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/dd2e8582-f114-41ab-b41b-109b3fe4fa0c)
-   - Build required tables as [<span style="background-color: #FFFF00">Models</span>]. In our case, we have three tables:
-     - Passengers:
-       ![Passengers Table](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/3c1dee7e-7669-4e4e-b6bb-eaeac9ffcfbc)
-     - Tickets:
-       ![Tickets Table](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/47ab1b59-cc8c-4603-b9bd-bc7a5fd9a032)
-     - Schedules:
-       ![Schedules Table](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/98940bc5-fbe6-460c-8a7c-7f2944e513ea)
-   - Call them in the configure page as shown in the image in 2.1.
+   - Build required tables as <span style="background-color: #FFFF00">Models</span>. In our case, we have three tables.
+   
+4. **Implementing Item Addition in Tables:**
+   - Utilize <span style="background-color: #FFFF00">Migrations</span> to create <span style="background-color: #FFFF00">prepare</span> and <span style="background-color: #FFFF00">revert</span> for each table.
 
-3. **Implementing Item Addition in Tables:**
-   - Utilize [<span style="background-color: #FFFF00">Migrations</span>] to create [<span style="background-color: #FFFF00">prepare</span>] and [<span style="background-color: #FFFF00">revert</span>] for each table.
-
-4. **Implementing Item Addition via Postman:**
-   - Use [<span style="background-color: #FFFF00">Postman</span>] as a networking tool to add items. 
+5. **Implementing Item Addition via Postman:**
+   - Use <span style="background-color: #FFFF00">Postman</span> as a networking tool to add items. 
    - Generate controllers to enable functionality, creating root and APIs for each.
    ![Postman Activation](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/fc2d700e-94c4-4b36-84c4-15519e6263ff)
 
-5. **Visualizing Database with Added Items:**
-   - Utilize [<span style="background-color: #FFFF00">Postico</span>] to visualize the database with the added items.
+6. **Visualizing Database with Added Items:**
+   - Utilize <span style="background-color: #FFFF00">Postico</span> to visualize the database with the added items.
 
 
 ### Credits
