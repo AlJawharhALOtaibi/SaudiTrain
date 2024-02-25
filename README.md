@@ -1,4 +1,4 @@
-## Train Ticket Scheduling Backend Service Powered by Vapor, Postman, Postico, and PostgreSQL
+# Train Ticket Scheduling Backend Service Powered by Vapor, Postman, Postico, and PostgreSQL
 
 ![Metro](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/eeda35d0-b7a9-48be-abc4-e23d080a0830)
 
@@ -8,7 +8,7 @@ The Train Ticket Scheduling Backend Service is an essential element of a train t
 
 The Train Ticket Scheduling Backend Service plays a critical role in ensuring the smooth operation of the train ticketing system. It facilitates seamless communication between frontend interfaces and underlying data storage systems, delivering an efficient user experience for both passengers and operators.
 
-### Features
+## Features
 
 Key features of the Train Ticket Scheduling Backend Service include:
 
@@ -34,7 +34,7 @@ Key features of the Train Ticket Scheduling Backend Service include:
    - Fetch all Train Schedules
    - Fetch Train Schedule by ID
 
-### Tools
+## Tools
 
 Thank you for utilizing the following tools:
 
@@ -54,7 +54,7 @@ Thank you for utilizing the following tools:
    - Description: Postgres is an open-source relational database management system known for its advanced features and scalability, ideal for handling complex data storage and retrieval requirements.
    - Website: [PostgreSQL](https://www.postgresql.org/)
 
-### Usage
+## Usage
 
 ![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
 
