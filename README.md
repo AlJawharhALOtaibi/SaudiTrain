@@ -14,10 +14,10 @@ Key features of the Train Ticket Scheduling Backend Service include:
 
 1. **Passenger Management:**
    - Fetch all Passengers
-   - Delete Passenger by Name
-   - Create Passengers by Name
-   - Read Passengers by Name
-   - Update Passengers by Name
+   - Delete Passenger by ID
+   - Create Passengers 
+   - Read Passengers by ID
+   - Update Passengers by ID
    - Fetch Passengers by ID
 
 2. **Ticket Management:**
@@ -25,8 +25,6 @@ Key features of the Train Ticket Scheduling Backend Service include:
    - Fetch Ticket by Ticket Number
    - Delete Ticket by Ticket Number
    - Read Ticket by Ticket Number
-   - Delete Seat Number
-   - Read Seat Number
 
 3. **Train Schedule Management:**
    - Create Train Schedule by ID
@@ -122,4 +120,4 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 
 ### Credits
 
-The project was created by rozana@gmail.com.
+The project was created with the collaboration of @Rosie2378.
