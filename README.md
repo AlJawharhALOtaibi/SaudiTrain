@@ -117,7 +117,19 @@ The project offers the following tables and their respective endpoints:
 | PUT | /train_schedule/:id| Updates train Schedule data by ID |
 
 All endpoints support JSON encoding and decoding of each itinerary and pilgrim items. To create, delete, or update on the itinerary’s type, send a JSON payload in the request body.
+![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/2f2eccbd-a71f-4c9a-9133-1c25ec350d35)
+
+![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/31f83880-0980-451a-bbe1-4a89e6a0ac72)
+
+![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/2d6c1fad-9ce9-4ada-ab6e-29b5387ca7b7)
+
+![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/d6da644f-66af-4340-a660-a6fc0b361e0e)
+
+![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/8f84fc1f-7ee5-43c0-92f5-aa6d489496ee)
+
+## Visual Interface
+
+![image](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/121889997/faf4dca3-ddec-4059-aa6a-869f9d68bb57)
 
 ### Credits
-
 The project was created with the collaboration of @Rosie2378.
