@@ -101,7 +101,7 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 ## Project Milestones:
 
 1. **Comprehend the system and construct an Entity-Relationship (ER) diagram:**
- ![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
+   ![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
 
 2. **Creating Database using Postgres:**
    - Execute the following command: `CREATE DATABASE sauditrain;`
@@ -119,6 +119,9 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 5. **Implementing Item Addition via Postman:**
    - Use **Postman** as a networking tool to add items. 
    - Generate controllers to enable functionality, creating root and APIs for each.
+     https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/763534a5-9596-49f0-80ff-a176551aa396
+
+
  
 6. **Visualizing Database with Added Items:**
    - Utilize **Postico** to visualize the database with the added items. <img width="939" alt="image" src="https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/ae34bb2b-82e2-46f6-984b-e1b695b434c6">
