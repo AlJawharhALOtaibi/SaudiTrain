@@ -37,7 +37,9 @@ Train Ticket Scheduling Backend Service.
 
 1. **Comprehend the system and construct an Entity-Relationship (ER) diagram:**
    ![Untitled Diagram drawio-2](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2e653ad4-bd1d-46c9-bf4c-c17b06218f8c)
-   - Functionality: Endpoint Catalog for Passenger, Ticket, and Train Schedules:
+
+ 
+ - Functionality: Endpoint Catalog for Passenger, Ticket, and Train Schedules:
      The service offers various tables and endpoints for smooth functionality:
 
 ### Passengers Table
@@ -99,27 +101,28 @@ Train Ticket Scheduling Backend Service.
 All endpoints support JSON encoding and decoding of each itinerary and pilgrim items. To create, delete, or update on the itinerary’s type, send a JSON payload in the request body.
 
 
-3. **Creating Database using Postgres:**
+
+2. **Creating Database using Postgres:**
    - Execute the following command: `CREATE DATABASE sauditrain;`
    ![Database Creation](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/2acfeb3f-a304-4fb0-87ed-e31813785b81)
 
-4. **Creating Project in Xcode using Vapor:**
+3. **Creating Project in Xcode using Vapor:**
    - Generate the project with: `vapor new SaudiTrain`
    - Linking to the Database through the **configure** page:
      ![Database Linking](https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/dd2e8582-f114-41ab-b41b-109b3fe4fa0c)
    - Build required tables as **Models**. In our case, we have three tables.
    
-5. **Implementing Item Addition in Tables:**
+4. **Implementing Item Addition in Tables:**
    - Create `prepare` and `revert` or each table.
 
-6. **Implementing Item Addition via Postman:**
+5. **Implementing Item Addition via Postman:**
    - Use **Postman** as a networking tool to add items. 
    - Generate controllers to enable functionality, creating root and APIs for each.
     <img width="1448" alt="image" src="https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/fca7ee15-9c87-4e8b-8ed2-f60b316da307">
 
 
  
-7. **Visualizing Database with Added Items:**
+6. **Visualizing Database with Added Items:**
    - Utilize **Postico** to visualize the database with the added items. <img width="939" alt="image" src="https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/ae34bb2b-82e2-46f6-984b-e1b695b434c6">
 
 
