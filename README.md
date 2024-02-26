@@ -119,7 +119,7 @@ All endpoints support JSON encoding and decoding of each itinerary and pilgrim i
 5. **Implementing Item Addition via Postman:**
    - Use **Postman** as a networking tool to add items. 
    - Generate controllers to enable functionality, creating root and APIs for each.
-     https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/763534a5-9596-49f0-80ff-a176551aa396
+    <img width="1448" alt="image" src="https://github.com/AlJawharhALOtaibi/SaudiTrain/assets/87391133/fca7ee15-9c87-4e8b-8ed2-f60b316da307">
 
 
  
